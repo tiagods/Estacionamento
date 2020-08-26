@@ -21,7 +21,7 @@ public class Conexao{
         Class.forName("com.mysql.jdbc.Driver").newInstance();
         //*criaremos um metodo string que recebera o endereço do banco
         String url = "";
-        url += "jdbc:mysql://192.168.0.202/estacionamento?";
+        url += "jdbc:mysql://localhost/estacionamento?";
         url += "user=root&password=123456";
         //*faremos a conexao e passar o valor para a vaeriavel
         con = DriverManager.getConnection(url);
